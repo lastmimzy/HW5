@@ -44,7 +44,7 @@ def encode(message: str) -> str:
     проверка работы с исключением 2
     >>> encode('!')
     Traceback (most recent call last):
-    KeyError: '*'
+    KeyError: '!'
     """
     encoded_signs = [
         LETTER_TO_MORSE[letter] for letter in message

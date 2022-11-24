@@ -18,26 +18,12 @@ Trying:
     encode('!')
 Expecting:
     Traceback (most recent call last):
-    KeyError: '*'
-**********************************************************************
-File "C:\Users\Mila\Desktop\hw5\issue_01\morse_encode.py", line 45, in morse_encode.encode
-Failed example:
-    encode('!')
-Expected:
-    Traceback (most recent call last):
-    KeyError: '*'
-Got:
-    Traceback (most recent call last):
-      File "D:\anaconda3\lib\doctest.py", line 1329, in __run
-        compileflags, 1), test.globs)
-      File "<doctest morse_encode.encode[3]>", line 1, in <module>
-        encode('!')
     KeyError: '!'
+ok
 1 items had no tests:
     morse_encode
-**********************************************************************
-1 items had failures:
-   1 of   4 in morse_encode.encode
+1 items passed all tests:
+   4 tests in morse_encode.encode
 4 tests in 2 items.
-3 passed and 1 failed.
-***Test Failed*** 1 failures.
+4 passed and 0 failed.
+Test passed.
