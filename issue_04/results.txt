@@ -1,0 +1,12 @@
+============================================================== test session starts ==============================================================
+platform win32 -- Python 3.7.6, pytest-7.2.0, pluggy-0.13.1 -- D:\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Mila\Desktop\hw5\issue_04
+collected 4 items
+
+OHE2.py::test_diff_cities PASSED                                                                                                           [ 25%] 
+OHE2.py::test_all_equal_cat PASSED                                                                                                         [ 50%] 
+OHE2.py::test_order_matters PASSED                                                                                                         [ 75%] 
+OHE2.py::test_empty_args PASSED                                                                                                            [100%] 
+
+=============================================================== 4 passed in 0.06s =============================================================== 

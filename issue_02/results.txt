@@ -1,0 +1,35 @@
+============================================================== test session starts ==============================================================
+platform win32 -- Python 3.7.6, pytest-7.2.0, pluggy-0.13.1 -- D:\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Mila\Desktop\hw5\issue_02
+collected 4 items
+
+morse_decode.py::test_decode[... --- ...-SOS] PASSED                                                                                       [ 25%] 
+morse_decode.py::test_decode[..--- ----- ..--- ..----2022] PASSED                                                                          [ 50%]
+morse_decode.py::test_decode[.... . .-.. .-.. ----hello] FAILED                                                                            [ 75%]
+morse_decode.py::test_decode[-] PASSED                                                                                                     [100%] 
+
+=================================================================== FAILURES ==================================================================== 
+____________________________________________________ test_decode[.... . .-.. .-.. ----hello] ____________________________________________________ 
+
+morse = '.... . .-.. .-.. ---', words = 'hello'
+
+    @pytest.mark.parametrize(
+        'morse, words',
+        [
+            ('... --- ...', 'SOS'),
+            ('..--- ----- ..--- ..---', '2022'),
+            ('.... . .-.. .-.. ---', 'hello'),
+            ('', '')
+        ]
+    )
+    def test_decode(morse, words):
+>       assert decode(morse) == words
+E       AssertionError: assert 'HELLO' == 'hello'
+E         - hello
+E         + HELLO
+
+morse_decode.py:50: AssertionError
+============================================================ short test summary info ============================================================ 
+FAILED morse_decode.py::test_decode[.... . .-.. .-.. ----hello] - AssertionError: assert 'HELLO' == 'hello'
+========================================================== 1 failed, 3 passed in 0.21s ========================================================== 
