@@ -1,0 +1,13 @@
+test_all_equal_cat (OHE.TestFitTransform)
+сравнение результата функции с ожидаемым результатом, ... ok
+test_diff_cities (OHE.TestFitTransform)
+сравнение результата функции с ожидаемым результатом ... ok
+test_empty_args (OHE.TestFitTransform)
+проверка на исключение, когда аргументы ... ok
+test_order_matters (OHE.TestFitTransform)
+тест проверяет, что преобразование признаков в численное ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK

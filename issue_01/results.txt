@@ -1,0 +1,29 @@
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('PY'*8) # doctest: +ELLIPSIS
+Expecting:
+    '.--. -.-- ... .--. -.--'
+ok
+Trying:
+    encode(123)
+Expecting:
+    Traceback (most recent call last):
+    TypeError: 'int' object is not iterable
+ok
+Trying:
+    encode('!')
+Expecting:
+    Traceback (most recent call last):
+    KeyError: '!'
+ok
+1 items had no tests:
+    morse_encode
+1 items passed all tests:
+   4 tests in morse_encode.encode
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
